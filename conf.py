@@ -10,16 +10,24 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
+
+import sys
+import os
+import shlex
+import sphinx_rtd_theme
+from recommonmark.parser import CommonMarkParser
+
+from docutils.parsers.rst.directives.admonitions import BaseAdmonition
+from sphinx.util import compat
+compat.make_admonition = BaseAdmonition
 # sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'openid'
-copyright = '2021, kontur'
-author = 'kontur'
+project = 'OpenID Connect'
+copyright = u'2021, SKB Kontur'
+author = u'SKB Kontur'
 
 # The full version, including alpha/beta/rc tags
 release = '1'
@@ -32,6 +40,13 @@ release = '1'
 # ones.
 extensions = [
 ]
+
+
+images_config = {
+    'override_image_directive': True
+}
+
+autodoc_docstring_signature = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -53,10 +68,28 @@ exclude_patterns = []
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
-html_theme = 'alabaster'
+#html_theme = 'default'
+#html_theme = 'sphinxdoc'
+#html_theme = 'scrolls'
+#html_theme = 'agogo'
+#html_theme = 'traditional'
+#html_theme = 'nature'
+#html_theme = 'haiku'
+#html_theme = 'pyramid'
+html_theme = 'sphinx_rtd_theme'
+#html_theme = 'alabaster'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'
+
+
+# If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
+html_show_sphinx = False
+
+# If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
+html_show_copyright = False
