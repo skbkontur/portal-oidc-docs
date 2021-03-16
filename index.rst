@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to openid's documentation!
-==================================
+OpenID Connect от Контура
+=========================
 
 .. toctree::
    :maxdepth: 2
@@ -14,15 +14,8 @@ Welcome to openid's documentation!
    scenarios
    schemes/index
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
 Что такое OpenID Connect
-========================
+------------------------
 
 OpenID Connect (OIDC) — инструмент, который помогает аутентифицировать пользователя с помощью OpenID Провайдера. OpenID Connect расширяет протокол авторизации OAuth2.0.  Прежде чем разобрать, зачем нужен OpenID Connect, определимся с основными понятиями, которые важны для интеграции.
 
