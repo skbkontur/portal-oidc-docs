@@ -61,8 +61,13 @@ language = 'ru'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+#exclude_patterns = []
 
+# The name of the Pygments (syntax highlighting) style to use.
+pygments_style = 'sphinx'
+
+# If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = False
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -78,6 +83,12 @@ exclude_patterns = []
 #html_theme = 'pyramid'
 html_theme = 'sphinx_rtd_theme'
 #html_theme = 'alabaster'
+
+
+# The name of an image file (within the static path) to use as favicon of the
+# docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
+# pixels large.
+#html_favicon = '_static/favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
