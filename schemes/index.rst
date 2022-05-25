@@ -2,7 +2,7 @@
 .. _`.Net`: https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.OpenIdConnect
 .. _`Java`: https://mvnrepository.com/artifact/org.springframework.security/spring-security-openid
 
-Реализация OpenID Connect
+Подключение к Контур.ID
 =========================
 
 .. toctree::

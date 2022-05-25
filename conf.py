@@ -25,8 +25,8 @@ compat.make_admonition = BaseAdmonition
 
 # -- Project information -----------------------------------------------------
 
-project = 'OpenID Connect'
-copyright = u'2021, SKB Kontur'
+project = 'Контур.ID'
+copyright = u'2022, SKB Kontur'
 author = u'SKB Kontur'
 
 # The full version, including alpha/beta/rc tags
