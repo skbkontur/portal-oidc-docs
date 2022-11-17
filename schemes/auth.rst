@@ -21,7 +21,7 @@
 
 На схеме ниже показаны основные этапы входа в приложение. Каждый этап описан в алгоритме. 
 
-.. image:: /_static/authentication_by_code.PNG
+.. image:: /_static/authentication_by_code.png
 
 **Алгоритм получения токена через код подтверждения**
 
@@ -289,7 +289,7 @@
 
 На схеме ниже показаны основные этапы входа в приложение. Каждый этап описан в алгоритме.
 
-.. image:: /_static/authentication_by_url.PNG
+.. image:: /_static/authentication_by_url.png
 
 **Алгоритм получения токена из URL**
 
